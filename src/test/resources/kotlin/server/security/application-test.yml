@@ -1,5 +1,5 @@
 wutsi:
-  client-id: "test"
+  client-id: test
   platform:
     security:
-      type: "jwt"
+      type: jwt

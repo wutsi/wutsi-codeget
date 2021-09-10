@@ -15,10 +15,10 @@ spring:
   {{/database}}
 
 wutsi:
-  client-id: "{{name}}"
+  client-id: {{name}}
   platform:
     security:
-      type: "jwt"
+      type: jwt
   {{#cache}}
     cache:
       type: memcached
@@ -29,6 +29,7 @@ wutsi:
   {{/cache}}
   {{#mqueue}}
     stream:
+      type: rabbitmq
       rabbitmq:
         url: ${CLOUDAMQP_URL}
   {{/mqueue}}

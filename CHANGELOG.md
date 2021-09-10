@@ -1,5 +1,9 @@
 # See https://keepachangelog.com/en/1.0.0/
 
+## [0.0.57] 2021-09-09
+### Changed
+- Fix the rabbitMQ configuration in PROD and TEST
+
 ## [0.0.54] 2021-08-26
 ### Changed
 - Update security configuration

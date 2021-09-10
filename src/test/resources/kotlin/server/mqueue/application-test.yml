@@ -1,8 +1,9 @@
 wutsi:
-  client-id: "test"
+  client-id: test
   platform:
     security:
-      type: "jwt"
+      type: jwt
     stream:
+      type: rabbitmq
       rabbitmq:
         url: ${CLOUDAMQP_URL}

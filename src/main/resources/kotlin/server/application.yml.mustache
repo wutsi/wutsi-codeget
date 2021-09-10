@@ -63,19 +63,19 @@ spring:
   {{/database}}
 
 wutsi:
-  client-id: "{{name}}"
+  client-id: {{name}}
   application:
     name: {{name}}
   platform:
     security:
-      type: "jwt"
+      type: jwt
     cache:
       type: local
     stream:
-      name: "${wutsi.application.name}"
+      name: ${wutsi.application.name}
       type: local
     tracing:
-      client-id: "${wutsi.application.name}"
+      client-id: ${wutsi.application.name}
       device-id-provider:
         type: header
 {{/services}}
